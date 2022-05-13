@@ -8,7 +8,7 @@ describe ('New board POM', () => {
     }
 
 
-    beforeEach('Be logged in and get to the new board pop up window', () => {
+    beforeEach('Be logged in', () => {
         cy.loginViaBackend();
         cy.visit('/');
         cy.url().should('include','/');
